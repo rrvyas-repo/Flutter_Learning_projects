@@ -179,7 +179,7 @@ Widget textField({
 
 //Textfield For Password Only
 
-bool _showPassword = false;
+bool _showPassword = true;
 
 Widget textFieldPassword({
   required TextEditingController txtcontroller,
@@ -196,11 +196,11 @@ Widget textFieldPassword({
               icon: _showPassword == true
                   ? const Icon(
                       Icons.visibility_off,
-                      color: Color.fromARGB(255, 163, 19, 19),
+                      color: Color(0xFF5A462C),
                     )
                   : const Icon(
                       Icons.visibility,
-                      color: Color.fromARGB(255, 214, 60, 60),
+                      color: Color(0xFF5A462C),
                     ),
               onPressed: () {
                 setState(() {
